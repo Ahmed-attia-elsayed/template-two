@@ -317,7 +317,7 @@ header .container .form i{
 .design .image,
 .design .text{
     position: relative;
-    flex: 1;
+    flex: 1; 
 }
 .design .image{
     text-align: center;
@@ -348,8 +348,6 @@ header .container .form i{
     top: 1px;
 }
 /* End Design */
-
-
 /* Start portfolio */
 .portfolio{
     padding-top: var(--section-padding);
@@ -389,7 +387,8 @@ header .container .form i{
     }
 }
 .portfolio .picture-container .box img{
-    max-width: 100%;transition: .3s;
+    max-width: 100%;
+    transition: .3s;
 }
 .portfolio .picture-container .box:hover img{
     transform: rotate(3deg) scale(1.1);
@@ -423,7 +422,6 @@ header .container .form i{
     margin: 30px auto;
 }
 /* End portfolio */
-
 /* Stsrt video */
 .video{
     position: relative;
@@ -437,7 +435,6 @@ header .container .form i{
 }
 .video video{
     width: 100%;
-
 }
 .video .text{
     position: absolute;
@@ -462,6 +459,7 @@ header .container .form i{
     text-transform: uppercase;
     border: none;
     padding: 10px 20px;
+    cursor: pointer;
 }
 /* End video */
 /* Start About */
@@ -483,6 +481,7 @@ header .container .form i{
     }
 }
 /* End About */
+/* Start Stats */
 .stats{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -542,6 +541,7 @@ header .container .form i{
 .stats .container .box p{
     font-size: 14px;
 }
+/* End Stats */
 /* Start Skills */
 .our-skills{
     padding-top: var(--section-padding);
@@ -616,6 +616,7 @@ header .container .form i{
 }
 .our-skills .skills .prog-holder .prog span::before{
     content: attr(data-progress);
+    
     position: absolute;
     background-color: black;
     color: white;
@@ -709,7 +710,7 @@ header .container .form i{
     padding: 20px;
     position: relative;
 }
-.pricing .plans .plan ul li:not(:last-child)::after{
+.pricing .plans .plan ul li:not(:last-child)::after{ 
     content: '';
     position: absolute;
     border-bottom: 1px solid var(--main-color);
@@ -919,6 +920,9 @@ header .container .form i{
 }
 .footer .container{
     position: relative;
+}
+.footer .container img{
+    z-index: 2;
 }
 .footer .container  p:not(.copyright) {
     font-size: 22px;
